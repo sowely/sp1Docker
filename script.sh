@@ -8,9 +8,13 @@ do
 	echo "Enter file path:"
 	read path
 
+	echo "atime:"
 	ls -l --time=atime $path
+	echo "mtime:"
 	ls -l $path
-	ls -i $path
+	echo "ctime"
+	ls -l --time=ctime $path
+
 
 	echo "Continue? (y/n)"
 	read quit
